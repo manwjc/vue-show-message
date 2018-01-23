@@ -1,0 +1,35 @@
+/*message*/
+.message {
+	display: box;
+	box-align: center;
+	display: flex; 
+	align-items: center;
+	text-align: center;
+	width: 90px;
+	height: 90px;
+	border-radius: 4px;
+	font-size: 12px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.text {
+	box-flex: 1;
+	flex: 1;
+}
+
+.fade-move,
+.fade-enter-active,
+.fade-leave-active {
+	transition: all .5s linear;
+}
+
+.fade-enter,
+.fade-leave-to {
+	opacity: 0;
+	transform: scaleY(0.01) translate(0, -30px);
+}
